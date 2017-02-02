@@ -1,5 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #79d8f2;
+  padding: 15px;
+  font-family: 'Lato', sans-serif;
+}
+
+
+/**************************
+  Navigation
+**************************/
+.main-nav li{
+  padding: 3px;
+}
+.main-nav a{
+  display: block;
+  padding: 10px 100px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.main-nav a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  font-size: 0.875em;
+}
+
+.main-nav ul{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+
+}
+
+.name{
+  align-self: center;
+}
+
+/***********************
+  Header
+************************/
+
+.container,
+.main-nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column-reverse;
+  margin: auto;
+  padding-bottom: 10%;
+}
+
+.profile p{
+  font-weight: 100;
+}
+
+.profile img{
+  align-self: center;
+  width: 85%;
+}
+
+/***********************
+  portfolio
+************************/
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#portfolio{
+  text-align: center;
+  background-color: #fff;
+  flex-direction: row;
+  padding: 25px 0px;
+}
+.portfolio-item{
+  text-align: center;
+  padding: 0.75em;
+}
+
+.portfolio-item img{
+  width: 100%;
+  align-self: center;
+  margin-left: .2em;
+}
+
+.content{
+  font-size: 0.875em;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/***********************
+  Skills section
+***********************/
+
+.skills_section{
+  background-color: #fff;
+  box-shadow: 10px 10px 5px #888888;
+}
+.skills_section h3{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.skills_section ul{
+  list-style: none;
+}
+
+.skills_container{
+  font-size: 14px;
+  font-weight: 300;
+  padding:0 10px 20px;
+}
+
+/*********************
+  footer
+**********************/
+
+.main-footer{
+  margin-top: 40px;
+  border-top: 1px solid #000;
+}
+
+.desktop-nav{
+  display: none;
+}
+
+.desktop-nav{
+  border-top: 1px solid #ccc;
+}
+
+
+.desktop-nav a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  padding-left: 15px;
+}
+
+.mobile-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.875em;
+}
+
+.mobile-nav li{
+  list-style-type: none;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 35px;
+}
+
+
+.statement{
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.mobile-nav{
+  font-size: 0.875em;
+  margin-top: 10px;
+}
+
+#email{
+  margin-top: 0;
+}
+
+#phone_number,
+#email_address{
+  padding-left: 10px;
+}
+
 
 @media (min-width: 768px) {
+
+  body{
+    background-color: #79d8f2;
+  }
+
+  /**********************
+    Navigation
+  **********************/
+  .main-nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+
+  .main-nav a{
+    display: block;
+    padding: 10px 60px;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+/*************************
+  header
+*************************/
+
+  .profile{
+    display: flex;
+    flex-direction: row;
+    padding: 2% 3%;
+    font-size: 1.125em;
+  }
+
+  .profile img{
+    width: 45%;
+  }
+
+  .profile p{
+    padding: 0 5% 5% 0;
+    margin-top: 0;
+  }
+
+/**************************
+  Portfolio
+**************************/
+
+  .portfolio-item,
+  .wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 30px;
+
+  }
+
+  .portfolio-item{
+    width: 50%;
+    margin: 0;
+  }
+
+#portfolio{
+  display: flex;
+  width:51%;
+  justify-content: center;
+}
 
 /************************
   Skills section
@@ -47,13 +301,112 @@
     padding-top: 15px;
   }
 
-  .contact_container{
-    max-width: 550px;
-    margin-left: 98px;
-  }
+.contact_container{
+  max-width: 550px;
+  margin-left: 98px;
+}
+
 
 }
+
+
 @media (min-width:1024px) {
+
+  body{
+    background-color: #fafafa;
+  }
+
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+/************************
+  Navigation
+************************/
+
+  .main-nav{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .name{
+    align-self: center;
+    padding-left: 27px;
+  }
+
+  .main-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav ul{
+    display: flex;
+    margin: 0 15px;
+    font-size: 14px;
+  }
+
+  .main-nav li{
+    list-style-type: none;
+    align-self: center;
+  }
+
+  .main-nav a{
+    text-decoration: none;
+    padding: 10px;
+  }
+
+
+/*************************
+  header
+**************************/
+
+  .profile{
+    display: flex;
+    font-size: 1.5em;
+    margin: 20px 30px;
+    padding: 0;
+  }
+
+  .profile p{
+    margin-top: 0;
+    padding: 0;
+    margin-right: 47px;
+    font-size: 75%;
+  }
+
+
+  /************************
+    Portfolio
+  ************************/
+  .wrapper{
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    margin-top: 3%;
+  }
+
+
+  #portfolio{
+    width: 95%;
+    text-align: center;
+    padding: 25px 0;
+    justify-content: center;
+  }
+
+  .portfolio-item{
+    display: flex;
+    flex-flow: column wrap;
+    width: 31%;
+    text-align: center;
+  }
+
+  .portfolio-item img{
+    width: 100%;
+  }
 
   /***********************
     Contact section

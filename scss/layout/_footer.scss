@@ -24,7 +24,7 @@
 }
 
 .mobile-nav{
-@extend %flex;
+ @extend %flex;
   justify-content: space-between;
   align-items: baseline;
   font-size: 0.875em;
@@ -35,8 +35,8 @@
 }
 
 .contact-info{
-  @extend %flex;
   @extend %centered;
+  @extend %flex;
   flex-direction: column;
   margin-top: 35px;
 }
