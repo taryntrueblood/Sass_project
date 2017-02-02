@@ -8,16 +8,19 @@
   align-items: center;
   margin: auto;
   background-color: $color-prim;
-  box-shadow: 10px 10px 5px $color-shadow;
+  box-shadow: 10px 10px 5px #888888;
 
 
   @media #{$brk-narrow}{
+    @extend %flex;
     flex-flow: row wrap;
+    justify-content: center;
     margin-top: 30px;
   }
 
   @media #{$brk-wide}{
     background-color: $color-prim;
+    @extend %flex;
     flex-flow: row wrap;
     padding-left: 25px;
     padding-bottom: 30px;
@@ -27,41 +30,48 @@
 
 #portfolio{
   @extend %centered;
-  @extend %flex;
   background-color: $color-prim;
   flex-direction: row;
   padding: 25px 0px;
 
   @media #{$brk-narrow}{
+    @extend %flex;
     width:51%;
+    justify-content: center;
   }
+
     @media #{$brk-wide}{
       width: 95%;
+      @extend %centered;
       padding: 25px 0;
+      justify-content: center;
     }
 }
 .portfolio-item{
   @extend %centered;
-  @extend %flex;
   padding: 0.75em;
 
   @media #{$brk-narrow}{
+    @extend %flex;
     flex-flow: row wrap;
+    justify-content: center;
     margin-top: 30px;
     width: 50%;
     margin: 0;
   }
     @media #{$brk-wide}{
+      @extend %flex;
       flex-flow: column wrap;
       width: 31%;
+      @extend %centered;
     }
 }
 
 .portfolio-item img{
-  @extend %flex;
+  width: 100%;
   align-self: center;
   margin-left: .2em;
-  width: 100%;
+
 }
 
 .content{
@@ -88,9 +98,7 @@
 }
 
 .skills_container{
-  @extend %flex;
   font-size: 14px;
   font-weight: 300;
   padding:0 10px 20px;
-
 }
