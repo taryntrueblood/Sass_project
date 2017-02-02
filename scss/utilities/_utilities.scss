@@ -1,8 +1,13 @@
+
+//Variables
+
 //Color values
 $white : #fff;
 $black : #000;
 $grey  : #ccc;
 $dark_grey : #888888;
+$spray : #79d8f2;
+$alabaster: #fafafa;
 
 $color-prim : $white;
 $color-sec  : $black;
@@ -13,3 +18,13 @@ $color-shadow : $dark_grey;
 
 $brk-narrow : '(min-width: 768px)';
 $brk-wide : '(min-width: 1024px)';
+
+
+//Mixins
+
+@mixin text($size: null, $weight: null,$l-height: null, $color: null) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $l-height;
+    color: $color;
+}

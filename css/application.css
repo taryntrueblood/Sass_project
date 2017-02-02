@@ -56,14 +56,14 @@ body {
       align-self: center; } }
 
 .main-nav a {
+  font-size: 0.875em;
+  font-weight: 700;
+  color: #000;
   display: block;
   padding: 10px 100px;
   text-align: center;
   background-color: #fafafa;
-  text-decoration: none;
-  font-weight: 700;
-  color: #000;
-  font-size: 0.875em; }
+  text-decoration: none; }
   @media (min-width: 768px) {
     .main-nav a {
       display: block;
@@ -135,8 +135,8 @@ body {
   box-shadow: 10px 10px 5px #ccc; }
   @media (min-width: 768px) {
     .wrapper {
-      flex-flow: row wrap;
       justify-content: center;
+      flex-flow: row wrap;
       margin-top: 30px; } }
   @media (min-width: 1024px) {
     .wrapper {
@@ -152,13 +152,13 @@ body {
   padding: 25px 0px; }
   @media (min-width: 768px) {
     #portfolio {
-      width: 51%;
-      justify-content: center; } }
+      justify-content: center;
+      width: 51%; } }
   @media (min-width: 1024px) {
     #portfolio {
+      justify-content: center;
       width: 95%;
-      padding: 25px 0;
-      justify-content: center; } }
+      padding: 25px 0; } }
 
 .portfolio-item {
   flex-direction: column;
@@ -182,8 +182,8 @@ body {
 
 .content {
   font-size: 0.875em;
-  line-height: 1.5;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 1.5; }
 
 /***********************
   Skills section
@@ -201,6 +201,7 @@ body {
 .skills_container {
   font-size: 14px;
   font-weight: 300;
+  line-height: 1.5;
   padding: 0 10px 20px; }
 
 /***************************
@@ -217,15 +218,15 @@ body {
   border-top: 1px solid #888888; }
 
 .desktop-nav a {
+  font-size: 700;
+  font-weight: #000;
   text-decoration: none;
-  font-weight: 700;
-  color: #000;
   padding-left: 15px; }
 
 .mobile-nav {
+  font-size: 0.875em;
   justify-content: space-between;
-  align-items: baseline;
-  font-size: 0.875em; }
+  align-items: baseline; }
 
 .mobile-nav li {
   list-style-type: none; }
@@ -235,6 +236,9 @@ body {
   margin-top: 35px; }
 
 .statement {
+  font-size: 300;
+  font-weight: 1;
+  line-height: 5;
   font-weight: 300;
   line-height: 1.5; }
 

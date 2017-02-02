@@ -17,17 +17,17 @@
 
 
 .desktop-nav a{
+  @include text(700, $color-sec);
   text-decoration: none;
-  font-weight: 700;
-  color: $color-sec;
   padding-left: 15px;
 }
 
 .mobile-nav{
  @extend %flex;
+ @include text(0.875em);
   justify-content: space-between;
   align-items: baseline;
-  font-size: 0.875em;
+
 }
 
 .mobile-nav li{
@@ -43,6 +43,7 @@
 
 
 .statement{
+  @include text(300, 1,5);
   font-weight: 300;
   line-height: 1.5;
 }

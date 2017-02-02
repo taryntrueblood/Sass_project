@@ -35,14 +35,12 @@
 }
 
 .main-nav a{
+  @include text(0.875em, 700, $color: $color-sec);
   display: block;
   padding: 10px 100px;
   text-align: center;
   background-color: #fafafa;
   text-decoration: none;
-  font-weight: 700;
-  color: #000;
-  font-size: 0.875em;
     @media #{$brk-narrow}{
       display: block;
       padding: 10px 60px;

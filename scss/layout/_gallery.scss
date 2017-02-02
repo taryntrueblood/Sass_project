@@ -11,8 +11,8 @@
   box-shadow: 10px 10px 5px $color-border;
 
   @media #{$brk-narrow}{
+  justify-content: center;
     flex-flow: row wrap;
-    justify-content: center;
     margin-top: 30px;
   }
 
@@ -33,14 +33,14 @@
   padding: 25px 0px;
 
   @media #{$brk-narrow}{
-    width:51%;
     justify-content: center;
+    width:51%;
   }
 
     @media #{$brk-wide}{
+      justify-content: center;
       width: 95%;
       padding: 25px 0;
-      justify-content: center;
     }
 }
 .portfolio-item{
@@ -70,9 +70,7 @@
 }
 
 .content{
-  font-size: 0.875em;
-  line-height: 1.5;
-  font-weight: 300;
+  @include text(0.875em, 300, 1.5);
 }
 
 /***********************
@@ -81,7 +79,7 @@
 
 .skills_section{
   background-color: $color-prim;
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px $color-shadow;
 }
 .skills_section h3{
   @extend %centered;
@@ -93,7 +91,6 @@
 }
 
 .skills_container{
-  font-size: 14px;
-  font-weight: 300;
+  @include text(14px, 300,1.5);
   padding:0 10px 20px;
 }

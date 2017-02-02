@@ -4,15 +4,15 @@
 
 body
   {
-      background-color: #79d8f2;
+      background-color: $spray;
       padding: 15px;
       font-family: 'Lato', sans-serif;
       @media #{$brk-narrow}
         {
-          background-color: #79d8f2;
+          background-color: $spray;
         }
         @media #{$brk-wide} {
-          background-color: #fafafa;
+          background-color: $alabaster;
         }
   }
   .container{
