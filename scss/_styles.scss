@@ -1,0 +1,66 @@
+
+@media (min-width: 768px) {
+
+/************************
+  Skills section
+************************/
+
+.skills_container{
+  display: flex;
+}
+
+.col{
+  flex: 1;
+  padding: 20px;
+}
+
+/*************************
+  footer
+**************************/
+  .desktop-nav, .desktop-nav li{
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.875em;
+  }
+
+  .desktop-nav ul{
+    display: flex;
+
+  }
+
+  .desktop-nav li{
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .mobile-nav{
+    display: none;
+  }
+
+  .desktop_nav_title{
+    align-self: center;
+  }
+
+  .footer-title{
+    padding-top: 15px;
+  }
+
+  .contact_container{
+    max-width: 550px;
+    margin-left: 98px;
+  }
+
+}
+@media (min-width:1024px) {
+
+  /***********************
+    Contact section
+  ***********************/
+
+  .contact_container{
+    margin-left: 22%;
+  }
+
+}

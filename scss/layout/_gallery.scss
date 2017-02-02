@@ -1,0 +1,96 @@
+/****************************
+ Desktop view - portfolio
+*****************************/
+
+.wrapper{
+  @extend %flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  background-color: $color-prim;
+  box-shadow: 10px 10px 5px $color-shadow;
+
+
+  @media #{$brk-narrow}{
+    flex-flow: row wrap;
+    margin-top: 30px;
+  }
+
+  @media #{$brk-wide}{
+    background-color: $color-prim;
+    flex-flow: row wrap;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    margin-top: 3%;
+  }
+}
+
+#portfolio{
+  @extend %centered;
+  @extend %flex;
+  background-color: $color-prim;
+  flex-direction: row;
+  padding: 25px 0px;
+
+  @media #{$brk-narrow}{
+    width:51%;
+  }
+    @media #{$brk-wide}{
+      width: 95%;
+      padding: 25px 0;
+    }
+}
+.portfolio-item{
+  @extend %centered;
+  @extend %flex;
+  padding: 0.75em;
+
+  @media #{$brk-narrow}{
+    flex-flow: row wrap;
+    margin-top: 30px;
+    width: 50%;
+    margin: 0;
+  }
+    @media #{$brk-wide}{
+      flex-flow: column wrap;
+      width: 31%;
+    }
+}
+
+.portfolio-item img{
+  @extend %flex;
+  align-self: center;
+  margin-left: .2em;
+  width: 100%;
+}
+
+.content{
+  font-size: 0.875em;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/***********************
+  Skills section
+***********************/
+
+.skills_section{
+  background-color: $color-prim;
+  box-shadow: 10px 10px 5px #888888;
+}
+.skills_section h3{
+  @extend %centered;
+  padding-top: 30px;
+}
+
+.skills_section ul{
+  list-style: none;
+}
+
+.skills_container{
+  @extend %flex;
+  font-size: 14px;
+  font-weight: 300;
+  padding:0 10px 20px;
+
+}

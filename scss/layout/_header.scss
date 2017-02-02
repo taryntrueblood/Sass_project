@@ -1,0 +1,48 @@
+/***************************
+ Desktop view -  Header
+****************************/
+
+.container,
+.main-nav{
+  @extend %flex;
+  flex-direction: column;
+}
+
+.profile{
+ @extend %flex;
+  flex-direction: column-reverse;
+  margin: auto;
+  padding-bottom: 10%;
+    @media #{$brk-narrow}{
+      flex-direction: row;
+      padding: 2% 3%;
+      font-size: 1.125em;
+      }
+      @media #{brk-wide}{
+        font-size: 1.5em;
+        margin: 20px 30px;
+        padding: 0;
+      }
+}
+
+.profile p{
+  font-weight: 100;
+    @media #{$brk-narrow}{
+      padding: 0 5% 5% 0;
+      margin-top: 0;
+    }
+    @media #{$brk-wide}{
+      margin-top: 0;
+      padding: 0;
+      margin-right: 47px;
+      font-size: 75%;
+    }
+}
+
+.profile img{
+  align-self: center;
+  width: 85%;
+    @media #{brk-narrow}{
+      width: 45%;
+    }
+}

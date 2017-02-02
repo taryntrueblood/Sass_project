@@ -1,0 +1,62 @@
+/***************************
+  Desktop view - footer
+ ****************************/
+
+.main-footer{
+  margin-top: 40px;
+  border-top: 1px solid $color-sec;
+}
+
+.desktop-nav{
+  display: none;
+}
+
+.desktop-nav{
+  border-top: 1px solid $color-shadow;
+}
+
+
+.desktop-nav a{
+  text-decoration: none;
+  font-weight: 700;
+  color: $color-sec;
+  padding-left: 15px;
+}
+
+.mobile-nav{
+@extend %flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.875em;
+}
+
+.mobile-nav li{
+  list-style-type: none;
+}
+
+.contact-info{
+  @extend %flex;
+  @extend %centered;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+
+.statement{
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.mobile-nav{
+  font-size: 0.875em;
+  margin-top: 10px;
+}
+
+#email{
+  margin-top: 0;
+}
+
+#phone_number,
+#email_address{
+  padding-left: 10px;
+}

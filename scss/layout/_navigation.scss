@@ -1,0 +1,66 @@
+/**********************************
+  Desktop version - Navigation
+***********************************/
+
+.main-nav{
+@media #{$brk-wide} {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+}
+
+.main-nav ul{
+   list-style: none;
+   padding: 0;
+   margin-bottom: 40px;
+    @media #{$brk-narrow}{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10px;
+    }
+    @media #{$brk-wide}{
+      display: flex;
+      margin: 0 15px;
+      font-size: 14px;
+    }
+}
+
+.main-nav li{
+  padding: 3px;
+   @media #{$brk-wide}{
+     list-style-type: none;
+     align-self: center;
+   }
+}
+
+.main-nav a{
+  display: block;
+  padding: 10px 100px;
+  text-align: center;
+  background-color: #fafafa;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  font-size: 0.875em;
+    @media #{$brk-narrow}{
+      display: block;
+      padding: 10px 60px;
+      text-align: center;
+      margin-left: 10px;
+    }
+
+    @media #{$brk-wide}{
+      text-decoration: none;
+      padding: 10px;
+    }
+}
+
+
+.name{
+  align-self: center;
+      @media #{$brk-wide}{
+        align-self: center;
+        padding-left: 27px;
+      }
+  }

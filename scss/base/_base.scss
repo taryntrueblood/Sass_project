@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body
+  {
+      background-color: #79d8f2;
+      padding: 15px;
+      font-family: 'Lato', sans-serif;
+      @media #{$brk-narrow}
+        {
+          background-color: #79d8f2;
+        }
+        @media #{$brk-wide} {
+          background-color: #fafafa;
+        }
+  }
+  .container{
+    @media #{$brk-wide}{
+        max-width: 1200px;
+        margin: 0 auto;
+     }
+
+  }
